@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38B080C462778948FA2722DF /* Pods_doctoronline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CE802C6B841B5AAEA331A7 /* Pods_doctoronline.framework */; };
 		FA5729D720C8524200439222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5729D620C8524200439222 /* AppDelegate.swift */; };
 		FA5729D920C8524200439222 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5729D820C8524200439222 /* ViewController.swift */; };
 		FA5729DC20C8524200439222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5729DA20C8524200439222 /* Main.storyboard */; };
 		FA5729DE20C8524300439222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5729DD20C8524300439222 /* Assets.xcassets */; };
 		FA5729E120C8524300439222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5729DF20C8524300439222 /* LaunchScreen.storyboard */; };
+		FA7FB87620CB563A00D64474 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA7FB87520CB563A00D64474 /* GoogleService-Info.plist */; };
+		FAE0BAC220C85864001F9F55 /* LogInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE0BAC120C85864001F9F55 /* LogInViewController.storyboard */; };
+		FAE0BAC420C85E1B001F9F55 /* VCLogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE0BAC320C85E1B001F9F55 /* VCLogIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33CE802C6B841B5AAEA331A7 /* Pods_doctoronline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doctoronline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C8287778D6650AB1A6E308B /* Pods-doctoronline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doctoronline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doctoronline/Pods-doctoronline.debug.xcconfig"; sourceTree = "<group>"; };
+		B8C9153C4882FDA2262D55F4 /* Pods-doctoronline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doctoronline.release.xcconfig"; path = "Pods/Target Support Files/Pods-doctoronline/Pods-doctoronline.release.xcconfig"; sourceTree = "<group>"; };
 		FA5729D320C8524200439222 /* doctoronline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doctoronline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5729D620C8524200439222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA5729D820C8524200439222 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		FA5729DD20C8524300439222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA5729E020C8524300439222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA5729E220C8524300439222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7FB87520CB563A00D64474 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAE0BAC120C85864001F9F55 /* LogInViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogInViewController.storyboard; sourceTree = "<group>"; };
+		FAE0BAC320C85E1B001F9F55 /* VCLogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCLogIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38B080C462778948FA2722DF /* Pods_doctoronline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B7514F79B11030A7ADAD2C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33CE802C6B841B5AAEA331A7 /* Pods_doctoronline.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4743DE5FD1F6D58F107F1D6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C8287778D6650AB1A6E308B /* Pods-doctoronline.debug.xcconfig */,
+				B8C9153C4882FDA2262D55F4 /* Pods-doctoronline.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FA5729CA20C8524200439222 = {
 			isa = PBXGroup;
 			children = (
 				FA5729D520C8524200439222 /* doctoronline */,
 				FA5729D420C8524200439222 /* Products */,
+				4743DE5FD1F6D58F107F1D6A /* Pods */,
+				0B7514F79B11030A7ADAD2C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +84,15 @@
 		FA5729D520C8524200439222 /* doctoronline */ = {
 			isa = PBXGroup;
 			children = (
+				FA7FB87520CB563A00D64474 /* GoogleService-Info.plist */,
 				FA5729D620C8524200439222 /* AppDelegate.swift */,
 				FA5729D820C8524200439222 /* ViewController.swift */,
 				FA5729DA20C8524200439222 /* Main.storyboard */,
 				FA5729DD20C8524300439222 /* Assets.xcassets */,
 				FA5729DF20C8524300439222 /* LaunchScreen.storyboard */,
 				FA5729E220C8524300439222 /* Info.plist */,
+				FAE0BAC120C85864001F9F55 /* LogInViewController.storyboard */,
+				FAE0BAC320C85E1B001F9F55 /* VCLogIn.swift */,
 			);
 			path = doctoronline;
 			sourceTree = "<group>";
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA5729E520C8524300439222 /* Build configuration list for PBXNativeTarget "doctoronline" */;
 			buildPhases = (
+				6BCFA3F4404CCE4B2F3766C0 /* [CP] Check Pods Manifest.lock */,
 				FA5729CF20C8524200439222 /* Sources */,
 				FA5729D020C8524200439222 /* Frameworks */,
 				FA5729D120C8524200439222 /* Resources */,
+				F3C7CBC5FD182B23EF0677EB /* [CP] Embed Pods Frameworks */,
+				FD45A988EA7E60FD991AE5CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,17 +160,123 @@
 			files = (
 				FA5729E120C8524300439222 /* LaunchScreen.storyboard in Resources */,
 				FA5729DE20C8524300439222 /* Assets.xcassets in Resources */,
+				FA7FB87620CB563A00D64474 /* GoogleService-Info.plist in Resources */,
+				FAE0BAC220C85864001F9F55 /* LogInViewController.storyboard in Resources */,
 				FA5729DC20C8524200439222 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6BCFA3F4404CCE4B2F3766C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-doctoronline-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3C7CBC5FD182B23EF0677EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-doctoronline/Pods-doctoronline-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-doctoronline/Pods-doctoronline-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD45A988EA7E60FD991AE5CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-doctoronline/Pods-doctoronline-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-doctoronline/Pods-doctoronline-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA5729CF20C8524200439222 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE0BAC420C85E1B001F9F55 /* VCLogIn.swift in Sources */,
 				FA5729D920C8524200439222 /* ViewController.swift in Sources */,
 				FA5729D720C8524200439222 /* AppDelegate.swift in Sources */,
 			);
@@ -278,6 +420,7 @@
 		};
 		FA5729E620C8524300439222 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C8287778D6650AB1A6E308B /* Pods-doctoronline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +439,7 @@
 		};
 		FA5729E720C8524300439222 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8C9153C4882FDA2262D55F4 /* Pods-doctoronline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
