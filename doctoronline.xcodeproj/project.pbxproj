@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		38B080C462778948FA2722DF /* Pods_doctoronline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CE802C6B841B5AAEA331A7 /* Pods_doctoronline.framework */; };
 		FA5729D720C8524200439222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5729D620C8524200439222 /* AppDelegate.swift */; };
-		FA5729D920C8524200439222 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5729D820C8524200439222 /* ViewController.swift */; };
+		FA5729D920C8524200439222 /* VCMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5729D820C8524200439222 /* VCMain.swift */; };
 		FA5729DC20C8524200439222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5729DA20C8524200439222 /* Main.storyboard */; };
 		FA5729DE20C8524300439222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5729DD20C8524300439222 /* Assets.xcassets */; };
 		FA5729E120C8524300439222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5729DF20C8524300439222 /* LaunchScreen.storyboard */; };
 		FA7FB87620CB563A00D64474 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA7FB87520CB563A00D64474 /* GoogleService-Info.plist */; };
+		FAA36FA520CF253E00228386 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA36FA420CF253E00228386 /* UIButton.swift */; };
+		FAA36FA720CF272800228386 /* VCSingUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA36FA620CF272800228386 /* VCSingUp.swift */; };
 		FAE0BAC220C85864001F9F55 /* LogInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE0BAC120C85864001F9F55 /* LogInViewController.storyboard */; };
 		FAE0BAC420C85E1B001F9F55 /* VCLogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE0BAC320C85E1B001F9F55 /* VCLogIn.swift */; };
 /* End PBXBuildFile section */
@@ -24,12 +26,14 @@
 		B8C9153C4882FDA2262D55F4 /* Pods-doctoronline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doctoronline.release.xcconfig"; path = "Pods/Target Support Files/Pods-doctoronline/Pods-doctoronline.release.xcconfig"; sourceTree = "<group>"; };
 		FA5729D320C8524200439222 /* doctoronline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doctoronline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5729D620C8524200439222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA5729D820C8524200439222 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA5729D820C8524200439222 /* VCMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCMain.swift; sourceTree = "<group>"; };
 		FA5729DB20C8524200439222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA5729DD20C8524300439222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA5729E020C8524300439222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA5729E220C8524300439222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA7FB87520CB563A00D64474 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAA36FA420CF253E00228386 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		FAA36FA620CF272800228386 /* VCSingUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSingUp.swift; sourceTree = "<group>"; };
 		FAE0BAC120C85864001F9F55 /* LogInViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogInViewController.storyboard; sourceTree = "<group>"; };
 		FAE0BAC320C85E1B001F9F55 /* VCLogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCLogIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +70,7 @@
 		FA5729CA20C8524200439222 = {
 			isa = PBXGroup;
 			children = (
+				FAA36FA320CF252800228386 /* extensions */,
 				FA5729D520C8524200439222 /* doctoronline */,
 				FA5729D420C8524200439222 /* Products */,
 				4743DE5FD1F6D58F107F1D6A /* Pods */,
@@ -86,15 +91,24 @@
 			children = (
 				FA7FB87520CB563A00D64474 /* GoogleService-Info.plist */,
 				FA5729D620C8524200439222 /* AppDelegate.swift */,
-				FA5729D820C8524200439222 /* ViewController.swift */,
+				FA5729D820C8524200439222 /* VCMain.swift */,
 				FA5729DA20C8524200439222 /* Main.storyboard */,
 				FA5729DD20C8524300439222 /* Assets.xcassets */,
 				FA5729DF20C8524300439222 /* LaunchScreen.storyboard */,
 				FA5729E220C8524300439222 /* Info.plist */,
 				FAE0BAC120C85864001F9F55 /* LogInViewController.storyboard */,
 				FAE0BAC320C85E1B001F9F55 /* VCLogIn.swift */,
+				FAA36FA620CF272800228386 /* VCSingUp.swift */,
 			);
 			path = doctoronline;
+			sourceTree = "<group>";
+		};
+		FAA36FA320CF252800228386 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAA36FA420CF253E00228386 /* UIButton.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +291,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAE0BAC420C85E1B001F9F55 /* VCLogIn.swift in Sources */,
-				FA5729D920C8524200439222 /* ViewController.swift in Sources */,
+				FAA36FA520CF253E00228386 /* UIButton.swift in Sources */,
+				FAA36FA720CF272800228386 /* VCSingUp.swift in Sources */,
+				FA5729D920C8524200439222 /* VCMain.swift in Sources */,
 				FA5729D720C8524200439222 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
